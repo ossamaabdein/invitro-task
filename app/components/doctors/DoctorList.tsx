@@ -40,7 +40,7 @@ const DoctorList = () => {
 	});
 
 	return (
-		<div className="doctor-list py-8 px-10">
+		<div className="doctor-list py-8 px-8 lg:px-10">
 			<div className="filters mb-5 flex gap-4 flex-wrap flex-row">
 				<SelectInput
 					name="specialty"

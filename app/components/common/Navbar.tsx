@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-blue-500 text-white py-4 px-8 flex justify-between">
-      <div className="text-lg font-bold">Book Your Doctor</div>
+      <div className="text-lg font-bold hidden lg:block">Book Your Doctor</div>
       <div className="flex gap-4">
         <Link href="/">
           <button
