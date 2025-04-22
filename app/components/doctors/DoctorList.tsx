@@ -42,8 +42,10 @@ const DoctorList = () => {
 	return (
 		<div className="doctor-list py-8 px-8 lg:px-10">
 			<div className="filters mb-5 flex gap-4 flex-wrap flex-row">
+				<label htmlFor="specialty-select" className="sr-only">Filter by Specialty</label>
 				<SelectInput
 					name="specialty"
+					id="specialty-select"
 					value={
 						specialtyOptions.find(
 							(option) => option.value === filter?.specialty
@@ -57,11 +59,12 @@ const DoctorList = () => {
 					}
 					options={specialtyOptions}
 					placeholder="All Specialties"
-					className="w-full sm:w-1/2 lg:w-[13rem]"
+					className="w-full lg:w-[14rem]"
 				/>
-
+				<label htmlFor="time-slot-select" className="sr-only">Filter by Time Slot</label>
 				<SelectInput
 					name="timeSlot"
+					id="time-slot-select"
 					value={
 						timeSlotOptions.find(
 							(option) => option.value === filter.timeSlot
@@ -75,7 +78,7 @@ const DoctorList = () => {
 					}
 					options={timeSlotOptions}
 					placeholder="All Time Slots"
-					className="w-full sm:w-1/2 lg:w-[13rem]"
+					className="w-full lg:w-[14rem]"
 				/>
 			</div>
 

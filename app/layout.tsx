@@ -25,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="description" content="Book your doctor appointments easily with our platform. View doctor details, filter by specialty and availability, and manage your appointments efficiently." />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

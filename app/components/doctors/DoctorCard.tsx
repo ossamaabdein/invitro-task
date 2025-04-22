@@ -25,11 +25,11 @@ const DoctorCard = ({ doctor, setSelectedDoctor } : { doctor: Doctor, setSelecte
       <p className="text-sm text-gray-600">{doctor?.specialty?.name}</p>
       <p className="text-sm text-gray-600">{doctor?.availability}</p>
       <p className="text-sm text-gray-600">{doctor?.location}</p>
-      <p className="text-sm text-yellow-500">Rating: {doctor?.rating} ⭐</p>
+      <p className="text-sm text-gray-600">Rating: <span className="text-black">{doctor?.rating}</span> ⭐</p>
       <button
         onClick={() => setSelectedDoctor(doctor)}
         className={`mt-4 py-2 px-4 rounded cursor-pointer ${
-          isDoctorBooked ? "bg-green-600 text-white" : "bg-blue-500 text-white hover:bg-blue-600"
+          isDoctorBooked ? "bg-green-600 text-white" : "bg-black text-white hover:bg-black/80"
         }`}
       >
         {isDoctorBooked ? "Booked" : "Book Appointment"}

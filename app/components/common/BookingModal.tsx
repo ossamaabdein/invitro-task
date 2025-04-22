@@ -9,9 +9,7 @@ const BookingModal = ({ doctor, onClose }: BookingModalProps) => {
   const addAppointment = useAppointmentsStore((state) => state.addAppointment);
   const appointments = useAppointmentsStore((state) => state.appointments);
 
-  useEffect(() => {
-    console.log("Appointments:", appointments);
-    
+  useEffect(() => {    
     const existingAppointment = appointments.find(
       (appointment) => appointment.doctorName === doctor.name
     );
@@ -53,9 +51,18 @@ const BookingModal = ({ doctor, onClose }: BookingModalProps) => {
         <p className="text-lg font-semibold mb-2">{doctor.name}</p>
         <p className="text-sm text-gray-600 mb-4">Available Time Slots:</p>
         <div
-          className="relative cursor-pointer"
+          role="button"
+          tabIndex={0}
           onClick={() => document.getElementById('date-picker')?.focus()}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              document.getElementById('date-picker')?.focus();
+            }
+          }}
+          aria-label="Open date picker"
+          className="relative cursor-pointer"
         >
+          <label htmlFor="date-picker" className="hidden">Select Date</label>
           <input
             id="date-picker"
             type="date"

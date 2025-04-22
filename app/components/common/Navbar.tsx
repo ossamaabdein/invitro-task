@@ -10,15 +10,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-500 text-white py-4 px-8 flex justify-between">
+    <nav className="bg-black text-white py-4 px-8 flex justify-between" role="navigation" aria-label="Main navigation">
       <div className="text-lg font-bold hidden lg:block">Book Your Doctor</div>
       <div className="flex gap-4">
         <Link href="/">
           <button
             onClick={() => handleTabClick("doctors")}
             className={`py-2 px-4 rounded cursor-pointer ${
-              activeTab === "doctors" ? "bg-blue-700" : "hover:bg-blue-600"
+              activeTab === "doctors" ? "bg-white/15" : "hover:bg-white/15"
             }`}
+            aria-label="Go to home page"
           >
             Doctors List
           </button>
@@ -27,8 +28,9 @@ const Navbar = () => {
           <button
             onClick={() => handleTabClick("appointments")}
             className={`py-2 px-4 rounded cursor-pointer ${
-              activeTab === "appointments" ? "bg-blue-700" : "hover:bg-blue-600"
+              activeTab === "appointments" ? "bg-white/15" : "hover:bg-white/15"
             }`}
+            aria-label="Go to my appointments page"
           >
             My Appointments
           </button>
