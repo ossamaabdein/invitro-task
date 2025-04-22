@@ -21,22 +21,9 @@
    ```
    Open your browser and navigate to `http://localhost:3000`.
 
-4. **Build for Production**
-   To create a production build, run:
-   ```bash
-   npm run build
-   ```
-   Then, start the production server:
-   ```bash
-   npm start
-   ```
-
 ## How AI Tools Were Used
 
 - **Code Generation**: Copilot was used to generate boilerplate code for components, state management, and utility functions.
-- **Accessibility Enhancements**: Copilot suggested improvements for keyboard navigation, ARIA attributes, and form labels.
-- **SEO Improvements**: Copilot added meta descriptions and other SEO-related enhancements.
-- **Error Handling**: Copilot identified and fixed issues in state management and UI updates.
 
 ## Why Next.js?
 
