@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Invitro Task
 
-## Getting Started
+## Setup Instructions
 
-First, run the development server:
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/ossamaabdein/invitro-task.git
+   cd invitro-task
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Install Dependencies**
+   Ensure you have Node.js installed, then run:
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Run the Development Server**
+   Start the development server:
+   ```bash
+   npm run dev
+   ```
+   Open your browser and navigate to `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Build for Production**
+   To create a production build, run:
+   ```bash
+   npm run build
+   ```
+   Then, start the production server:
+   ```bash
+   npm start
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How AI Tools Were Used
 
-## Learn More
+- **Code Generation**: Copilot was used to generate boilerplate code for components, state management, and utility functions.
+- **Accessibility Enhancements**: Copilot suggested improvements for keyboard navigation, ARIA attributes, and form labels.
+- **SEO Improvements**: Copilot added meta descriptions and other SEO-related enhancements.
+- **Error Handling**: Copilot identified and fixed issues in state management and UI updates.
 
-To learn more about Next.js, take a look at the following resources:
+## Why Next.js?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project uses **Next.js**, which is the recommended framework by React for future projects. Next.js provides powerful features like server-side rendering, static site generation, and built-in routing, making it an excellent choice for modern web applications.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Known Limitations or Next Steps
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Styling**: Some components may need further styling for better responsiveness and user experience.
+2. **Error Handling**: Improve error handling for edge cases, such as invalid inputs or server errors.
+3. **Performance**: Optimize the application for faster load times and better performance.
+4. **Documentation**: Expand the documentation to include detailed explanations of components and utilities.
+5. **Enable Appointment Cancellation**: Add functionality to allow users to cancel their appointments.
+6. **User Authentication**: Implement user authentication to secure access to appointments and user data.
+7. **Use Real Data**: Replace mock data with real data from a backend or API.
